@@ -1,10 +1,11 @@
 [project]
 name = "consensus_TF"
-version = "0.0.2"
+version = "0.0.3"
 dependencies = [
-   "parrot",
+   "idptools-parrot",
    "numpy",
    "torch",
+   "importlib"
 ]
 authors = [
   { name="Claire Josephine LeBlanc", email="claire.leblanc@berkeley.edu" },
@@ -13,7 +14,7 @@ authors = [
 ]
 description = "Consensus model package that predicts the section in an amino acid sequence likely to be a transcription factor, based on the consensus model created at Staller Lab, according to a given particular threshold or a generic threshold of 0.7."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.9, <3.12"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
@@ -24,3 +25,10 @@ license-files = ["LICEN[CS]E*"]
 [project.urls]
 Homepage = "https://github.com/staller-lab/consensus_model_package"
 Issues = "https://github.com/staller-lab/consensus_model_package/issues"
+
+[tool.setuptools.package-data]
+consensus_TF = ["*.pt"]
+
+[tool.hatch.build.targets.wheel]
+include = ["src/consensus_TF"]
+artifacts = ["src/consensus_TF/*.pt"]

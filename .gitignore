@@ -1,0 +1,9 @@
+dist/
+build/
+*.egg-info/
+*.whl
+__pycache__/
+*.pyc
+.venv/
+venv/
+custom311/

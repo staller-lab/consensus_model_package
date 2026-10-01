@@ -2,6 +2,7 @@ LICENSE
 README.md
 pyproject.toml
 src/consensus_TF/__init__.py
+src/consensus_TF/consensus_model_all_six.pt
 src/consensus_TF/package_script.py
 src/consensus_TF/process_runs.py
 src/consensus_TF/run_query.py

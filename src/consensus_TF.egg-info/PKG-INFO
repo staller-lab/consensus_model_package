@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: consensus_TF
-Version: 0.0.2
+Version: 0.0.3
 Summary: Consensus model package that predicts the section in an amino acid sequence likely to be a transcription factor, based on the consensus model created at Staller Lab, according to a given particular threshold or a generic threshold of 0.7.
 Author-email: Claire Josephine LeBlanc <claire.leblanc@berkeley.edu>, Marissa Ann Zintel <marissa.zintel@berkeley.edu>, "Rishaan J. Bansal" <ruhi.bansal@berkeley.edu>
 License-Expression: MIT
@@ -8,12 +8,13 @@ Project-URL: Homepage, https://github.com/staller-lab/consensus_model_package
 Project-URL: Issues, https://github.com/staller-lab/consensus_model_package/issues
 Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: OS Independent
-Requires-Python: >=3.9
+Requires-Python: <3.12,>=3.9
 Description-Content-Type: text/markdown
 License-File: LICENSE
-Requires-Dist: parrot
+Requires-Dist: idptools-parrot
 Requires-Dist: numpy
 Requires-Dist: torch
+Requires-Dist: importlib
 Dynamic: license-file
 
 This is a simple Python package that is based off of the consensus model developed at Staller Lab.

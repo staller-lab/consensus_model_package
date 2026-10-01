@@ -1,3 +1,4 @@
-parrot
+idptools-parrot
 numpy
 torch
+importlib
