@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/consensus_TF/__init__.py
+src/consensus_TF/package_script.py
+src/consensus_TF/process_runs.py
+src/consensus_TF/run_query.py
+src/consensus_TF.egg-info/PKG-INFO
+src/consensus_TF.egg-info/SOURCES.txt
+src/consensus_TF.egg-info/dependency_links.txt
+src/consensus_TF.egg-info/requires.txt
+src/consensus_TF.egg-info/top_level.txt

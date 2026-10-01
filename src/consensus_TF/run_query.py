@@ -8,7 +8,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 model = BRNN_MtM(20, hidden_size=10, num_layers=1, num_classes=1, device=device)
 
-model_path = os.path.join(os.path.dirname(__file__), "consensus_model_all_six.pt")
+model_path = "consensus_model_all_six.pt"
 
 # Best practice: use weights_only=True for security when unpickling
 model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
