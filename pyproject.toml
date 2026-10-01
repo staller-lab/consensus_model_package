@@ -1,0 +1,24 @@
+[project]
+name = "consensus_TF"
+version = "0.0.1"
+dependencies = [
+   "parrot",
+   "numpy"
+]
+authors = [
+  { name="Claire LeBlanc", email="claire.leblanc@berkeley.edu" },
+  { name="Rishaan Bansal", email="ruhi.bansal@berkeley.edu"},
+]
+description = "Consensus model package that predicts the section in an amino acid sequence likely to be a transcription factor, based on the consensus model created at Staller Lab, according to a given particular threshold or a generic threshold of 0.7."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
