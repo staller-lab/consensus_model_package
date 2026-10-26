@@ -1,9 +1,16 @@
 import argparse
 from parrot import encode_sequence
-from consensus_TF.run_query import run
-from consensus_TF.process_runs import get_runs, get_runs_coords
+from madrigal-predictor.run_query import run
+from madrigal-predictor.process_runs import get_runs, get_runs_coords
+# TODO: Add file parsing
+# TODO: Add docstrings and type hints
 
-def read_sequence(data, threshold=0.7):
+def analyze_fasta_file(file_path, threshold=0.6):
+    # Read file path
+    # Seperate into sequences
+
+
+def read_sequence(data, threshold=0.6):
     data = sanitize(data)
     query_input = encode_sequence.one_hot(data).float().unsqueeze(0)
     output = run(query_input).squeeze().tolist()
@@ -14,7 +21,7 @@ def read_sequence(data, threshold=0.7):
 def sanitize(sequence):
     return ''.join(sequence.upper().split())
 
-def read_sequences(data, threshold=0.7):
+def read_sequences(data, threshold=0.6):
     lines = data.splitlines()
 
     titles = []

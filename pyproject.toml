@@ -1,16 +1,16 @@
 [project]
-name = "consensus_TF"
-version = "0.0.3"
+name = "madrigal-predictor"
+version = "0.0.4"
 dependencies = [
    "idptools-parrot",
    "numpy",
    "torch",
-   "importlib"
 ]
 authors = [
   { name="Claire Josephine LeBlanc", email="claire.leblanc@berkeley.edu" },
   { name="Marissa Ann Zintel", email="marissa.zintel@berkeley.edu" },
-  { name="Rishaan J. Bansal", email="ruhi.bansal@berkeley.edu" },
+  { name="Sanjana R. Kotha", email="sanjana.kotha@berkeley.edu"},
+  { name="Rishaan Jayce Bansal", email="ruhi.bansal@berkeley.edu" },
 ]
 description = "Consensus model package that predicts the section in an amino acid sequence likely to be a transcription factor, based on the consensus model created at Staller Lab, according to a given particular threshold or a generic threshold of 0.7."
 readme = "README.md"
@@ -27,8 +27,8 @@ Homepage = "https://github.com/staller-lab/consensus_model_package"
 Issues = "https://github.com/staller-lab/consensus_model_package/issues"
 
 [tool.setuptools.package-data]
-consensus_TF = ["*.pt"]
+madrigal-predictor = ["*.pt"]
 
 [tool.hatch.build.targets.wheel]
-include = ["src/consensus_TF"]
-artifacts = ["src/consensus_TF/*.pt"]
+include = ["src/madrigal-predictor"]
+artifacts = ["src/madrigal-predictor/*.pt"]
