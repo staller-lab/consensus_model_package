@@ -1,6 +1,6 @@
 [project]
 name = "madrigal-predictor"
-version = "0.0.4"
+version = "0.0.8"
 dependencies = [
    "idptools-parrot",
    "numpy",
@@ -27,8 +27,8 @@ Homepage = "https://github.com/staller-lab/consensus_model_package"
 Issues = "https://github.com/staller-lab/consensus_model_package/issues"
 
 [tool.setuptools.package-data]
-madrigal-predictor = ["*.pt"]
+madrigal_predictor = ["*.pt"]
 
 [tool.hatch.build.targets.wheel]
-include = ["src/madrigal-predictor"]
-artifacts = ["src/madrigal-predictor/*.pt"]
+include = ["src/madrigal_predictor"]
+artifacts = ["src/madrigal_predictor/*.pt"]

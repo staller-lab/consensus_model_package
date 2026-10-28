@@ -7,7 +7,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 model = BRNN_MtM(20, hidden_size=10, num_layers=1, num_classes=1, device=device)
 
-weights = files("consensus_TF") / "consensus_model_all_six.pt"
+weights = files("madrigal_predictor") / "consensus_model_all_six.pt"
 with as_file(weights) as model_path:
     state = torch.load(model_path, map_location=device, weights_only=True) # Best practice: use weights_only=True for security when unpickling
 model.load_state_dict(state)
