@@ -42,9 +42,6 @@ demo were verified. The package is pure Python and depends only on
 cross-platform libraries, so it should run on any system meeting the
 requirements above, macOS and Linux included.
 
-The package is pure Python and depends only on cross-platform libraries, so it
-should run on any system meeting the requirements above, Linux included.
-
 ### Required non-standard hardware
 
 **None.** MADRIGAL runs on a standard desktop computer using the CPU only. The
