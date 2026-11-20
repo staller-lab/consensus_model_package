@@ -7,3 +7,6 @@ __pycache__/
 .venv/
 venv/
 custom311/
+
+# demo output
+demo/output/
