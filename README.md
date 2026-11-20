@@ -209,22 +209,10 @@ these predictions.
 
 ### Practical notes
 
-- Sequences should be at least 53 aa, the longest input window among the six
-  source predictors.
+- MADRIGAL takes a protein sequence of arbitrary length and returns a
+  per-residue prediction, so there is no minimum or maximum input length. The
+  sequences it was trained on were between 53 and 1,442 residues.
 - Input is case-insensitive and whitespace is stripped.
-- Run the tests with `python -m pytest tests/`, or
-  `python tests/test_coordinates.py` without pytest.
-
-### Changes in 0.1.1
-
-The fourth value returned by `read_sequence` and `analyze_fasta_file` is now
-`above_ends`, the inclusive end position of each predicted activation domain.
-Version 0.1.0 returned `below_starts`, the start positions of the
-below-threshold stretches, which did not correspond to the activation domains:
-whenever a sequence began below threshold — the usual case — the two lists were
-offset by one, so pairing them produced wrong coordinates. Code written against
-0.1.0 that used only the first three values is unaffected. Predictions
-themselves are unchanged.
 
 ### Reproducing the published results
 
