@@ -37,10 +37,10 @@ Installing the package pulls these in automatically. A clean install on
 
 ### Operating systems tested
 
-| Operating system | Status |
-|---|---|
-| Windows 11 Home (build 26200) | Tested — install and demo verified |
-| macOS [version — FILL IN] | Tested |
+Tested on Windows 11 Home (build 26200), where both the installation and the
+demo were verified. The package is pure Python and depends only on
+cross-platform libraries, so it should run on any system meeting the
+requirements above, macOS and Linux included.
 
 The package is pure Python and depends only on cross-platform libraries, so it
 should run on any system meeting the requirements above, Linux included.
